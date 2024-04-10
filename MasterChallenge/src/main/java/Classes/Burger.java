@@ -42,8 +42,8 @@ class Burger extends Item{
 
 
     public void printItemizedList(){
-        System.out.println(toString()+"{");
-        System.out.println("Toppings :{");
+        System.out.println(toString());
+        System.out.println("Toppings :");
         if(extra1!=null){
             printExtra(extra1);
         }if(extra2!=null){
@@ -51,11 +51,7 @@ class Burger extends Item{
         }if(extra3!=null){
             printExtra(extra3);
         }
-        System.out.println(
-                """
-                }
-                }
-                """);
+
 
     }
 }
