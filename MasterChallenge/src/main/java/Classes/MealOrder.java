@@ -21,6 +21,9 @@ public class MealOrder {
 
     }
     public double getTotalPrice(){
+        if(burger instanceof DeluxeBurger dx){
+            return dx.getAdjustedPrice();
+        }
         return burger.getAdjustedPrice()+drink.getAdjustedPrice()+side.getAdjustedPrice();
     }
     public void printItemizedList(){
