@@ -1,6 +1,6 @@
 package Classes;
 
-public class DeluxeBurger extends Burger{
+ class DeluxeBurger extends Burger{
     private Item extra4,extra5;
     public DeluxeBurger(String name,double price){
         super(name,price);
