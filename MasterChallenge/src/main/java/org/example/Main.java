@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) {
         MealOrder nova= new MealOrder("Deluxe","coke","fries");
         nova.addBurgerToppings("Bacon","Cheese","Banana","Egg","Bacon");
+        nova.setSizeDrink("Large");
         nova.printItemizedList();
 
 
